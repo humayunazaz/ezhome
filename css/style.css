@@ -1,6 +1,12 @@
 body {
     font-family: 'Hind Vadodara', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: normal;
+    color: #1D1E1C;
+}
+p, li, button{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
     font-weight: normal;
 }
 header {
@@ -22,10 +28,12 @@ header .phoneNumber p{
     margin-bottom: 0;
     font-size: 16px;
     margin-left: 5px;
+    font-weight: 700;
 }
 header .login button{
     padding: 6px 20px;
     border-radius: 3px;
+    font-weight: 700;
 }
 header .logo-here img{
     margin-top: 5px;
@@ -52,13 +60,15 @@ header .logo-here img{
     margin-bottom: 15px;
 }
 .mainContentHere .content .btn{
-    padding: 10px 25px;
-    margin-top: 10px;
+    margin-top: 15px;
+    padding: 15px 40px;
     border-radius: 3px;
+    font-size: 18px;
+    font-weight: 700;
 }
 .mainContentHere .textBlock{
     padding: 70px 50px;
-    background: #0c793d;
+    background: #2C7A3D;
     border-radius: 5px;
 }
 .mainContentHere .textBlock h3{
@@ -84,6 +94,9 @@ header .logo-here img{
 }
 .listHere p img, .listHere p span{
     float: left;
+}
+.listHere p span{
+    font-size: 16px;
 }
 .growMain{
     position: relative;
@@ -125,7 +138,10 @@ section.grow{
     font-size: 22px;
 }
 .hardWork .hardContent{
-    padding: 0 30px;
+    padding: 0 15px;
+}
+.hardWork .hardContent.rightPadding{
+    padding-left: 40px;
 }
 .hardWork .hardContent h4{
     font-weight: 700;
@@ -144,15 +160,21 @@ section.grow{
     float: right;
 }
 .hardWork .singleContent{
-    margin-bottom: 80px;
+    margin-bottom: 100px;
+}
+.hardWork .singleContent.desktop{
+    display: block;
+}
+.hardWork .singleContent.responsive{
+    display: none;
 }
 .hardWork .hardImage.floatLeft img{
     float: left;
 }
 .partnership .content{
-    background: #0c793d;
+    background: #2C7A3D;
     border-radius: 3px;
-    padding: 30px;
+    padding: 50px;
     text-align: center;
     color: #fff;
 }
@@ -164,11 +186,14 @@ section.grow{
     font-weight: 700;
     font-size: 30px;
     margin-bottom: 25px;
+    margin-top: 0;
 }
 .partnership .content .btn{
     margin-top: 15px;
-    padding: 10px 20px;
+    padding: 15px 40px;
     border-radius: 3px;
+    font-size: 18px;
+    font-weight: 700;
 }
 .partnership .content p{
     font-size: 16px;
@@ -195,7 +220,7 @@ section.grow{
     margin-top: 20px;
 }
 .services li, .company li, .learn li{
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.7;
 }
 .needHand{
@@ -226,6 +251,7 @@ footer .leftIcons img{
 footer .rightContent li{
     display: inline;
     padding: 0 10px;
+    font-size: 14px;
 }
 footer .centerContent{
     text-align: center;
@@ -242,11 +268,11 @@ footer .footerIcons{
     }
     header .logo-here{
         float: left;
-        width: 40%;
+        width: 37%;
     }    
     header .content{
         float: left;
-        width: 60%;
+        width: 63%;
         padding-left: 0;
     }
     header .login button{
@@ -258,15 +284,14 @@ footer .footerIcons{
     header .phoneNumber p{
         font-size: 14px;
     }
-
     .mainContentHere{
-        padding: 30px 0;
+        padding: 0;
     }
     .mainContentHere .content{
-        margin-bottom: 15px;
+        margin: 15px 0;
     }
     .mainContentHere .content h1{
-        font-size: 20px;
+        font-size: 24px;
         line-height: 1.3;
     }
     .mainContentHere .textBlock{
@@ -276,26 +301,43 @@ footer .footerIcons{
     .mainContentHere .textBlock h3{
         font-size: 16px;
     }
+    .mainContentHere .textBlock p{
+        font-size: 14px;
+    }
     .mainContentHere .textBlock .listHere{
         float: left;
     }
     .listHere p span{
         width: 85%;
+        font-size: 13px;
     }
     section.grow{
         padding: 70px 0;
+    }
+    .grow .container{
+        padding: 0;
+    }
+    .growMain img{
+        width: 100%;
     }
     .growContent{
         padding: 20px 5px;
     }
     .growContent h2{
-        font-size: 18px;
+        font-size: 26px;
+        margin-top: 20px;
     }
     .growContent p{
         font-size: 14px;
     }
+    .hardWork .container{
+        padding: 0;
+    }
+    .hardWork .mainHeading{
+        text-align: left;
+    }
     .hardWork .mainHeading h2{
-        font-size: 26px;
+        font-size: 28px;
     }
     .hardWork .mainHeading p{
         font-size: 18px;
@@ -305,9 +347,19 @@ footer .footerIcons{
         float: left;
         padding: 0;
     }
+    .hardWork .singleContent.desktop{
+        display: none;
+    }
+    .hardWork .singleContent.responsive{
+        display: block;
+        margin-bottom: 30px;
+    }
     .hardWork .hardContent{
-        padding: 0;
+        padding: 15px;
         float: left;
+    }
+    .hardWork .hardContent.rightPadding{
+        padding-left: 15px;
     }
     .hardWork .hardImage{
         float: left;
@@ -323,6 +375,7 @@ footer .footerIcons{
     }
     .partnership .content{
         border-radius: 0;
+        padding: 60px 30px;
     }
     .partnership .contantHere{
         width: 100%;
@@ -337,7 +390,7 @@ footer .footerIcons{
         display: inline-block;
     }
     .iconsHere{
-        width:100%;
+        width:95%;
     }
     .iconsHere .phone, .iconsHere .help, .iconsHere .email{
         float: left;
@@ -350,7 +403,7 @@ footer .footerIcons{
         padding: 0;
     }
     footer .rightContent ul li{
-        padding: 0 7px;
+        padding: 0 4px;
     }
     footer .footerIcons{
         margin: auto;
@@ -360,6 +413,88 @@ footer .footerIcons{
     }
     .main-bg img{
         width: 100%;
+    }
+    .iconsHere .email img{
+        margin-top: 3px;
+        margin-bottom: 8px;
+    }
+}
+@media (min-width:375px) and (max-width:413px) {
+    .mainContentHere{
+        padding: 0;
+    }
+    .mainContentHere .content{
+        margin: 90px 0px;
+    }
+    header .logo-here{
+        width: 40%;
+    }
+    header .content{
+        width:60%;
+    }
+    .mainContentHere .content p{
+        font-size: 16px;
+    }
+    .mainContentHere .content h1{
+        font-size: 32px;
+    }
+    .mainContentHere .textBlock h3{
+        font-size: 18px;
+    }
+    .mainContentHere .textBlock .listHere p{
+        font-size: 16px;
+    }
+    .growContent h2{
+        font-size: 32px;
+        margin-top: 30px;
+    }
+    .growContent p{
+        font-size: 16px;
+    }
+    .iconsHere{
+        width:80%;
+    }
+    footer .rightContent ul li{
+        padding: 0 10px;
+    }
+}
+@media (min-width:414px) and (max-width:567px) {
+    .mainContentHere{
+        padding: 0;
+    }
+    .mainContentHere .content{
+        margin: 110px 0px;
+    }
+    header .logo-here{
+        width: 40%;
+    }
+    header .content{
+        width:60%;
+    }
+    .mainContentHere .content p{
+        font-size: 18px;
+    }
+    .mainContentHere .content h1{
+        font-size: 36px;
+    }
+    .mainContentHere .textBlock h3{
+        font-size: 21px;
+    }
+    .mainContentHere .textBlock .listHere p{
+        font-size: 16px;
+    }
+    .growContent h2{
+        font-size: 36px;
+        margin-top: 35px;
+    }
+    .growContent p{
+        font-size: 18px;
+    }
+    .iconsHere{
+        width:70%;
+    }
+    footer .rightContent ul li{
+        padding: 0 15px;
     }
 }
 @media (min-width:568px) and (max-width:767px) {
